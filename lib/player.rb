@@ -10,13 +10,13 @@ class Player
     puts "#{@name} a #{@life_points} points de vie"
   end
 
-def gets_damage(damage_received)
-  @life_points -= damage_received
+  def gets_damage(damage_received)
+    @life_points -= damage_received
 
-  if @life_points <= 0
-    @life_points = 0
-    puts "Le légendaire #{@name} a été tragiquement tué ... Que son âme repose en paix !"
-   end
+    if @life_points <= 0
+      @life_points = 0
+      puts "Le légendaire #{@name} a été tragiquement tué ... Que son âme repose en paix !"
+    end
   end
 
   def attacks(player)
